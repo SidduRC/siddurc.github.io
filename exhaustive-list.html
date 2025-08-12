@@ -1,0 +1,1878 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project List</title>
+    <style>
+      body {
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          'Helvetica Neue', Arial, sans-serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+      h2 {
+        text-align: center;
+        color: #444;
+      }
+      h3 {
+        text-align: center;
+        color: #444;
+      }
+      #searchInput {
+        width: 100%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: 2px solid #ccc;
+        border-radius: 4px;
+        font-size: 16px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+        box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+        background-color: #fff;
+      }
+      th,
+      td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid #ddd;
+      }
+      thead th {
+        background-color: #007bff;
+        color: white;
+        cursor: pointer;
+        position: sticky;
+        top: 0;
+      }
+      tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+      }
+      tbody tr:hover {
+        background-color: #e2e2e2;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Royal Gulf Project Portfolio</h2>
+    <h3>Mekar - Italy</h3>
+    <input
+      type="text"
+      id="searchInput"
+      onkeyup="searchTable()"
+      placeholder="Search for projects.."
+    />
+
+    <table id="projectTable">
+      <thead>
+        <tr>
+          <th>Project Name</th>
+          <th>Territory</th>
+          <th>Origin</th>
+          <th>Year</th>
+          <th>Consultant Name</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>WAFI Residential Complex</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1993</td>
+          <td>Ewbank International</td>
+        </tr>
+        <tr>
+          <td>Dubai Equine Hospital for H H Shk Mohammed</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1994</td>
+          <td>Ewbank International</td>
+        </tr>
+        <tr>
+          <td>Hilton Beach Club, Jumeirah</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1994</td>
+          <td>Ewbank International</td>
+        </tr>
+        <tr>
+          <td>Beach Centre, Jumeirah (BURGER KING)</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1994</td>
+          <td>Kennedy & Donkin</td>
+        </tr>
+        <tr>
+          <td>Sharjah TV Studio</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1994</td>
+          <td>Ewbank International</td>
+        </tr>
+        <tr>
+          <td>C56 Building in Corniche Area, Al Dana Tower</td>
+          <td>Abu Dhabi</td>
+          <td>Italy</td>
+          <td>1994</td>
+          <td>Syr Consultants</td>
+        </tr>
+        <tr>
+          <td>Dubai World Trade Centre, Residential Central Plant</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1995</td>
+          <td>Dar Al Handasah</td>
+        </tr>
+        <tr>
+          <td>Dubai World Trade Centre, 4 New Exhibition Halls</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1995</td>
+          <td>Dar Al Handasah</td>
+        </tr>
+        <tr>
+          <td>Shk. Mana & Shk. Mohd. Hotel - Deira (LORD HOTEL)</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1995</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Emirates Training Centre, Garhoud</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1995</td>
+          <td>RMJM Consultants</td>
+        </tr>
+        <tr>
+          <td>Al Bustan Centre, Al Ghusais</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1995</td>
+          <td>W S Atkins</td>
+        </tr>
+        <tr>
+          <td>Al Bustan Centre, Al Ghusais</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1995</td>
+          <td>W S Atkins</td>
+        </tr>
+        <tr>
+          <td>Guest Villa, Al Ain Palace</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1995</td>
+          <td>Ewbank International</td>
+        </tr>
+        <tr>
+          <td>Al Mas Cinema</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1995</td>
+          <td>Al Mas Consultants</td>
+        </tr>
+        <tr>
+          <td>Dubai Air Show ‘95</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1995</td>
+          <td>Dept. of Civil Aviation</td>
+        </tr>
+        <tr>
+          <td>New Spinney’s Retail Outlet, Dubai</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1995</td>
+          <td>W S Atkins</td>
+        </tr>
+        <tr>
+          <td>Sea Palace</td>
+          <td>Abu Dhabi</td>
+          <td>Italy</td>
+          <td>1995</td>
+          <td>Syr Consultants</td>
+        </tr>
+        <tr>
+          <td>Dubai Economic Building – Al Ramool</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1996</td>
+          <td>Arif & Bintoak</td>
+        </tr>
+        <tr>
+          <td>New Al Abbas Building – ANZ Grindlays Bank, Dubai</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1996</td>
+          <td>Ewbank International</td>
+        </tr>
+        <tr>
+          <td>Sun & Sand Hotel, Deira</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1996</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Jumeirah Beach Resort Development - Beach Restaurant</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1996</td>
+          <td>W S Atkins</td>
+        </tr>
+        <tr>
+          <td>Royal Imperial Residence, Bur Dubai</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1996</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Welcare Hospital</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1996</td>
+          <td>Chawla Consultants</td>
+        </tr>
+        <tr>
+          <td>Jumeirah Beach Resort Development – Conference Center</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1996</td>
+          <td>W S Atkins</td>
+        </tr>
+        <tr>
+          <td>Shk Mohd Bin Khaled Al Nahyan, Private Development</td>
+          <td>Abu Dhabi</td>
+          <td>Italy</td>
+          <td>1996</td>
+          <td>Syr Consultants</td>
+        </tr>
+        <tr>
+          <td>BURJ AL ARAB – 7 Star Hotel</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1997</td>
+          <td>W S Atkins</td>
+        </tr>
+        <tr>
+          <td>Comml. Bldg. for Mohammad Bin Masood & Sons</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1997</td>
+          <td>Schuster PP</td>
+        </tr>
+        <tr>
+          <td>Jebel Ali Hotel Extension</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1997</td>
+          <td>Kennedy & Donkin</td>
+        </tr>
+        <tr>
+          <td>JBRD Staff Accommodation at Al Qoze. Phase I & II</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1997</td>
+          <td>W S Atkins</td>
+        </tr>
+        <tr>
+          <td>DUBAL General Amenities Building</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1997</td>
+          <td>Kennedy & Donkin</td>
+        </tr>
+        <tr>
+          <td>WAFI Pyramid Health Club</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1997</td>
+          <td>Kennedy & Donkin</td>
+        </tr>
+        <tr>
+          <td>JBRD Staff Accommodtion - Club House</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1997</td>
+          <td>W S Atkins</td>
+        </tr>
+        <tr>
+          <td>DUBAL Administration Building</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1997</td>
+          <td>Kennedy & Donkin</td>
+        </tr>
+        <tr>
+          <td>Ritz Carlton - Jumeirah (ABJAR Group)</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1997</td>
+          <td>Kennedy & Donkin</td>
+        </tr>
+        <tr>
+          <td>WAFI Planet Hollywood</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1997</td>
+          <td>Kennedy & Donkin</td>
+        </tr>
+        <tr>
+          <td>JBRD Aqua Park Chalets & Projector Room</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1998</td>
+          <td>W S Atkins</td>
+        </tr>
+        <tr>
+          <td>JBRD Staff Accommodation – Phase III</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1998</td>
+          <td>W S Atkins</td>
+        </tr>
+        <tr>
+          <td>City Center, Dubai – Fashion Café</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1998</td>
+          <td>Mott MacDonald</td>
+        </tr>
+        <tr>
+          <td>Ajman City Center</td>
+          <td>Ajman</td>
+          <td>Italy</td>
+          <td>1998</td>
+          <td>Kennedy & Donkin</td>
+        </tr>
+        <tr>
+          <td>Dubai Airport Free Zone –Phase I Building</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1998</td>
+          <td>Dar Al Handasah</td>
+        </tr>
+        <tr>
+          <td>Dubai Airport Free Zone Reception Building</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1998</td>
+          <td>Dar Al Handasah</td>
+        </tr>
+        <tr>
+          <td>CBRD Aqua Park Package 5410</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1998</td>
+          <td>W S Atkins</td>
+        </tr>
+        <tr>
+          <td>Al Shola Complex</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1998</td>
+          <td>Khatib & Alami</td>
+        </tr>
+        <tr>
+          <td>Al Naboodah Commercial & Residential Building</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1998</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Al Naboodah Office Tower</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1998</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Mazaya Center Extension</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1998</td>
+          <td>ARTEC Consultants</td>
+        </tr>
+        <tr>
+          <td>Safa Park Villa - EO</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1998</td>
+          <td>ARENCO</td>
+        </tr>
+        <tr>
+          <td>Dr. Juma Khalfan Abdulhoul Building</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1998</td>
+          <td>NUTEK Consultants</td>
+        </tr>
+        <tr>
+          <td>New Emirates Coop Society Shopping Centre at Al Ghusais</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1998</td>
+          <td>Al Hatmy Consultants</td>
+        </tr>
+        <tr>
+          <td>JBRD Staff Accommodation – Phase IV</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1999</td>
+          <td>W S Atkins</td>
+        </tr>
+        <tr>
+          <td>Ajman City Center – Phase II</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1999</td>
+          <td>Kennedy & Donkin</td>
+        </tr>
+        <tr>
+          <td>Gulf Soap Factory Extension</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1999</td>
+          <td>Al Hatmy Consultants</td>
+        </tr>
+        <tr>
+          <td>G + 11 Building for Dr. Abdulla Hamadi at Sharjah</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1999</td>
+          <td>NUTEK Consultants</td>
+        </tr>
+        <tr>
+          <td>Emirates Golf Club Extension</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1999</td>
+          <td>CASP - MEP</td>
+        </tr>
+        <tr>
+          <td>Shk. Ahmed Building, Zabeel Road</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1999</td>
+          <td>Kennedy & Donkin</td>
+        </tr>
+        <tr>
+          <td>Business Centre for Qassim Sultan</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1999</td>
+          <td>Kennedy & Donkin</td>
+        </tr>
+        <tr>
+          <td>Rais Hassan Saddi – Distribution Centre at JAFZA</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1999</td>
+          <td>Kennedy & Donkin</td>
+        </tr>
+        <tr>
+          <td>Gobash Building</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1999</td>
+          <td>Mott MacDonald</td>
+        </tr>
+        <tr>
+          <td>Gulf & Safa Dairy</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1999</td>
+          <td>W S Atkins</td>
+        </tr>
+        <tr>
+          <td>Al Bayan Printing Press Building</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1999</td>
+          <td>Engineer’s Office</td>
+        </tr>
+        <tr>
+          <td>CBRD Staff Accommodation – Phase III</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>1999</td>
+          <td>W S Atkins</td>
+        </tr>
+        <tr>
+          <td>Emirates Airline, Al Sawari Tower C</td>
+          <td>Abu Dhabi</td>
+          <td>Italy</td>
+          <td>1999</td>
+          <td>Syr Consultants</td>
+        </tr>
+        <tr>
+          <td>Al Shawari Tower B, Mercedez Benz Bldg, Abu Dhabi</td>
+          <td>Abu Dhabi</td>
+          <td>Italy</td>
+          <td>1999</td>
+          <td>Syr Consultants</td>
+        </tr>
+        <tr>
+          <td>Al Quoz Industrial Development</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2000</td>
+          <td>Engineer’s Office</td>
+        </tr>
+        <tr>
+          <td>DCC Cinema Complex</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2000</td>
+          <td>Farmer Cortese</td>
+        </tr>
+        <tr>
+          <td>Al Owais Building</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2000</td>
+          <td>Kennedy & Donkin</td>
+        </tr>
+        <tr>
+          <td>G+M+3 Bldg for Shk. Mohd Bin Hasher Maktoum</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2000</td>
+          <td>PHB</td>
+        </tr>
+        <tr>
+          <td>Management Residency Building - Jumeirah International</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2000</td>
+          <td>W S Atkins</td>
+        </tr>
+        <tr>
+          <td>B+G+ M+3 Comm & Resi Bldg on Oudh Metha Road</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2000</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Al Makhawi Building</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2000</td>
+          <td>W S Atkins</td>
+        </tr>
+        <tr>
+          <td>Dubai Poly Film</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2000</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Fujairah Resort</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2000</td>
+          <td>Mario Associates</td>
+        </tr>
+        <tr>
+          <td>Sharjah City Center</td>
+          <td>Sharjah</td>
+          <td>Italy</td>
+          <td>2000</td>
+          <td>Kennedy & Donkin</td>
+        </tr>
+        <tr>
+          <td>T & B International, Jebel Ali</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2000</td>
+          <td>Model Engineering</td>
+        </tr>
+        <tr>
+          <td>National Bank of Dubai, Sharjah</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2001</td>
+          <td>Kennedy & Donkin</td>
+        </tr>
+        <tr>
+          <td>Spinney’s</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2001</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Cultural Centre</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2001</td>
+          <td>Kennedy & Donkin</td>
+        </tr>
+        <tr>
+          <td>Dubai Media City (TAJ Studio)</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2001</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Jumeirah Beach Hotel – Leisure Lounge</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2001</td>
+          <td>W S Atkins</td>
+        </tr>
+        <tr>
+          <td>Dubai World Trade Centre – Hall No.8</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2001</td>
+          <td>RMJM Consultants</td>
+        </tr>
+        <tr>
+          <td>Victory Team Relocation</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2001</td>
+          <td>Kennedy & Donkin</td>
+        </tr>
+        <tr>
+          <td>RAK Cement Factory</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2001</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>G+4 Building for Mr. Mohd. Saleh</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2001</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Audi Showroom</td>
+          <td>Abu Dhabi</td>
+          <td>Italy</td>
+          <td>2001</td>
+          <td>Golden Planners Consultants</td>
+        </tr>
+        <tr>
+          <td>Emirates Aviation Training Center</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2002</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Damad Medical Factory</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2002</td>
+          <td>Elite Design & Engineering Consultancy</td>
+        </tr>
+        <tr>
+          <td>Ali Bujsaim Building</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2002</td>
+          <td>Development Board</td>
+        </tr>
+        <tr>
+          <td>Dubai World Trade Centre – Hall No. 1 & 2</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2002</td>
+          <td>RMJM Consultants</td>
+        </tr>
+        <tr>
+          <td>G+1 Villa at Al Safa</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2002</td>
+          <td>GEMAC</td>
+        </tr>
+        <tr>
+          <td>Emirates Hills</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2002</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Al Nasr Sport Club</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2002</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Dubai Islamic Bank</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2002</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Madinat Jumeirah Phase 2(Hotel)</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2002</td>
+          <td>RPW Consultants</td>
+        </tr>
+        <tr>
+          <td>Dubai Media City – 4 Nos. Residential Building</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2002</td>
+          <td>Mario Associates</td>
+        </tr>
+        <tr>
+          <td>Dubai Media City – Leo Brunnett</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2002</td>
+          <td>Mario Associates</td>
+        </tr>
+        <tr>
+          <td>Madinat Jumeirah - Staff Accommodation</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2002</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Dubai World Trade Centre – Al Wasl Building</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2002</td>
+          <td>RMJM Consultants</td>
+        </tr>
+        <tr>
+          <td>Al Raha Beach Hotel</td>
+          <td>Abu Dhabi</td>
+          <td>Italy</td>
+          <td>2002</td>
+          <td>DMJM Consultants</td>
+        </tr>
+        <tr>
+          <td>IBIS Hotel Extension – Dubai World Trade Centre</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2003</td>
+          <td>RMJM Consultants</td>
+        </tr>
+        <tr>
+          <td>Commercial Building Kasim Modh. Al Khafaji, Umm Hurair</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2003</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Dubai Air Port Freezone – Phase III</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2003</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Wafi Shopping Mall – Anchor Bldg. Extn</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2003</td>
+          <td>Roberts & Partners</td>
+        </tr>
+        <tr>
+          <td>Siemens Building @ Knowledge Village</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2003</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Knowledge Village II, B+G+3(6 Bldgs) for DTMFZ</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2004</td>
+          <td>DAR Consult</td>
+        </tr>
+        <tr>
+          <td>Grosvenor House, 45 Storey Bldg for HH Sheikh Ahmed</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2004</td>
+          <td>Arcon Consultants</td>
+        </tr>
+        <tr>
+          <td>Madinat Jumeirah, Phase 3</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2004</td>
+          <td>RPW Consultants</td>
+        </tr>
+        <tr>
+          <td>Arabian Ranches, Club House</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2004</td>
+          <td>RMJM Consultants</td>
+        </tr>
+        <tr>
+          <td>Arabian Ranches, Golf Club</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2004</td>
+          <td>RPW Consultants</td>
+        </tr>
+        <tr>
+          <td>Zulekha Hospital</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2004</td>
+          <td>Mechwatt Consultants</td>
+        </tr>
+        <tr>
+          <td>Knowledge Village</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2004</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Gate Building, DIFC</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2004</td>
+          <td>Roberts & Partners</td>
+        </tr>
+        <tr>
+          <td>Dubai Metals & Commodities Building</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2004</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Hilton Beach Club</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2004</td>
+          <td>Roberts & Partners</td>
+        </tr>
+        <tr>
+          <td>Hyatt Regency Hotel, AHU’s & FCU’s replacement</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2004</td>
+          <td>WSP</td>
+        </tr>
+        <tr>
+          <td>Dubai Auto Drome</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2004</td>
+          <td>W S Atkins</td>
+        </tr>
+        <tr>
+          <td>A22A, Bassam Tower at Dubai Marina</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2004</td>
+          <td>W S Atkins</td>
+        </tr>
+        <tr>
+          <td>Emirates New Engineering Center</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2004</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>G + 5 Building at Hor Al Anz</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2004</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>G + 38 Building at Al Quoz</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2004</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Mankhool Tower for Sheikh Ahmed</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2004</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Gold Crest Residential Tower</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2005</td>
+          <td>W S Atkins</td>
+        </tr>
+        <tr>
+          <td>2B+G+6 Plot No 313, Al Hamriya</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2005</td>
+          <td>National Engineering Bureau</td>
+        </tr>
+        <tr>
+          <td>Knowledge Village – Academy City</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2005</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Magic Planet – Mall of Emirates</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2005</td>
+          <td>WSP</td>
+        </tr>
+        <tr>
+          <td>Water Front Apartments</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2005</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Jumeirah English Speaking School</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2005</td>
+          <td>W S Atkins</td>
+        </tr>
+        <tr>
+          <td>Jaddaf Tower</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2005</td>
+          <td>W S Atkins</td>
+        </tr>
+        <tr>
+          <td>Cine Star Complex – Mall of Emirates</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2005</td>
+          <td>WSP</td>
+        </tr>
+        <tr>
+          <td>Giant Super Market - Rashidiya</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2005</td>
+          <td>WSP</td>
+        </tr>
+        <tr>
+          <td>B + G + 12, Al Barsha</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2005</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Dubai Sky Gardens, Phase II</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2005</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Al Owais Building</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2005</td>
+          <td>RPW Consultants</td>
+        </tr>
+        <tr>
+          <td>Commercial Bank of Dubai, Ajman</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2005</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>G + 3 Building, Um Hurair</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2005</td>
+          <td>DAR Consult</td>
+        </tr>
+        <tr>
+          <td>G + 7 Resi Building at Jaddaf</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2005</td>
+          <td>Arif & Bintoak</td>
+        </tr>
+        <tr>
+          <td>Dubai City Centre, Bin Hindi</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2005</td>
+          <td>Mott MacDonald</td>
+        </tr>
+        <tr>
+          <td>G + 7, Butti Obaid Butti</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2005</td>
+          <td>Totentec</td>
+        </tr>
+        <tr>
+          <td>Bob Al Shams, Endurance City</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2005</td>
+          <td>RPW Consultants</td>
+        </tr>
+        <tr>
+          <td>Suleiman Al Habib Medical Centre</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2005</td>
+          <td>Arif & Bintoak</td>
+        </tr>
+        <tr>
+          <td>Old Town Development, Phase 1</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2005</td>
+          <td>Allied Consultants</td>
+        </tr>
+        <tr>
+          <td>Harvey Nichols @ Mall of Emirates</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2005</td>
+          <td>WSP</td>
+        </tr>
+        <tr>
+          <td>Persian Restaurant @ Meadows</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2005</td>
+          <td>Design Consultants</td>
+        </tr>
+        <tr>
+          <td>Dubai Community Theatre & Arts Centre</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2005</td>
+          <td>WSP</td>
+        </tr>
+        <tr>
+          <td>Shk Zayed Mosque</td>
+          <td>Abu Dhabi</td>
+          <td>Italy</td>
+          <td>2005</td>
+          <td>Hyder Consulting</td>
+        </tr>
+        <tr>
+          <td>Green Lakes Residentital</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2006</td>
+          <td>ARCH Group</td>
+        </tr>
+        <tr>
+          <td>Emirates Crew Training College</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2006</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>DMCC- Gold & Silver Towers</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2006</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Palm District Cooling - Palm Jumeirah Trunk Project</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2006</td>
+          <td>Hyder Consulting</td>
+        </tr>
+        <tr>
+          <td>GATE Village @ DIFC</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2006</td>
+          <td>Hyder Consulting</td>
+        </tr>
+        <tr>
+          <td>Marina View Twin Tower @ Marsa</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2006</td>
+          <td>Adnan Saffarini</td>
+        </tr>
+        <tr>
+          <td>Allied Superhub & Warehouses</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2006</td>
+          <td>Halcrow Consultants</td>
+        </tr>
+        <tr>
+          <td>Knowledge Village @ Academic City, Phase 2</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2006</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Emirate Flight Catering Facility</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2006</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>The Dubai Mall</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2006</td>
+          <td>Meinhart consultants</td>
+        </tr>
+        <tr>
+          <td>Emaar Business Park Phase I & II</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2006</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Burj Dubai Project(Burj Khalifa)</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2007</td>
+          <td>Hyder Consulting</td>
+        </tr>
+        <tr>
+          <td>Dubai Municipality Branch Office at Al Twar</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2007</td>
+          <td>Tangram Architects & Consultants</td>
+        </tr>
+        <tr>
+          <td>IBN Batuta Gate Complex(Hotel Building)</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2007</td>
+          <td>Dar Al Handasah</td>
+        </tr>
+        <tr>
+          <td>Burj Dubai Lake Hotel(Address Hotel)</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2007</td>
+          <td>W S Atkins</td>
+        </tr>
+        <tr>
+          <td>
+            G+55 Storey Commercial Office & Residential tower & G+8 Car Parking
+            Building
+          </td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2007</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Dubai World Trade Centre, Residences</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2007</td>
+          <td>Hyder Consulting</td>
+        </tr>
+        <tr>
+          <td>Dubai Sky Gardens</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2007</td>
+          <td>W S Atkins</td>
+        </tr>
+        <tr>
+          <td>Sheraton Hotel Staff Accomodation</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2007</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Ducto Group Head Quarters Building</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2007</td>
+          <td>Mario Associates</td>
+        </tr>
+        <tr>
+          <td>Al Sofouh Tower at TECOM</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2007</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Masar Printing Press</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2007</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Al Nasr Sports Club</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2007</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Al Tayer Tower</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2007</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Al Rostamani Tower G + 55</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2007</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Al Rand Tower</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2007</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Al Naboodah Shopping Centre</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2007</td>
+          <td>ARCH Group</td>
+        </tr>
+        <tr>
+          <td>Golf Tower, Phase II</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2007</td>
+          <td>National Engineering Bureau</td>
+        </tr>
+        <tr>
+          <td>Saba Tower, Phase II & III</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2007</td>
+          <td>RMJM Consultants</td>
+        </tr>
+        <tr>
+          <td>Shk Ahmed Towers (3 nos) @ Juneirah Lake Towers</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2007</td>
+          <td>ARCH Group</td>
+        </tr>
+        <tr>
+          <td>Salam Industrial Park</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2007</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Tecom Office Tower</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2007</td>
+          <td>Al Gurg Consultants</td>
+        </tr>
+        <tr>
+          <td>GCAA New Area Navigation</td>
+          <td>Abu Dhabi</td>
+          <td>Italy</td>
+          <td>2007</td>
+          <td>RMJM Consultants</td>
+        </tr>
+        <tr>
+          <td>Land Mark Shopping Mall</td>
+          <td>Qatar</td>
+          <td>Italy</td>
+          <td>2007</td>
+          <td>Arab Engineering Bureau</td>
+        </tr>
+        <tr>
+          <td>RTA Bus Depot at Ruwayah</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>Jurong International Consulting</td>
+        </tr>
+        <tr>
+          <td>2B+G+12 Comm./Resi. Building</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>DAR Consult</td>
+        </tr>
+        <tr>
+          <td>Taj Grandeur Residences</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>ARCH Group</td>
+        </tr>
+        <tr>
+          <td>2B+G+M+12 Office & Furnished Apts.</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>ARCH Group</td>
+        </tr>
+        <tr>
+          <td>Meydan Racing District Development</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>CKR Consulting Engineers</td>
+        </tr>
+        <tr>
+          <td>Gateway Towers & Carpark Podium Project</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>W S Atkins</td>
+        </tr>
+        <tr>
+          <td>Movenpick Hotel & Spa & Oceana Residences</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>Dar Al Handasah</td>
+        </tr>
+        <tr>
+          <td>Anantara Tiara Residences, Palm Jumeirah</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>Dar Al Handasah</td>
+        </tr>
+        <tr>
+          <td>Al Fattan Hotel & Appartment at Palm Jumeirah</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>Proleed Consultants</td>
+        </tr>
+        <tr>
+          <td>2B+G+8 Comm Residential Building</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>SPP</td>
+        </tr>
+        <tr>
+          <td>2B+G+16 Comm and Residential Building</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>Arif & Bintoak</td>
+        </tr>
+        <tr>
+          <td>Dubai Rehabilitation Centre</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>Schuster PP</td>
+        </tr>
+        <tr>
+          <td>RAK Silicon Oasis</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>Mario Associates</td>
+        </tr>
+        <tr>
+          <td>Business Park at Business Bay, Dubai Properties</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>Kling Consult</td>
+        </tr>
+        <tr>
+          <td>Dubai Mall Project-Tenant FitOuts</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>Various</td>
+        </tr>
+        <tr>
+          <td>Laguna Tower</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>Al Gurg Consultants</td>
+        </tr>
+        <tr>
+          <td>Oceana Heights, Dubai Marina</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>One at Business Bay</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>Spec Consultants</td>
+        </tr>
+        <tr>
+          <td>Bays Water Tower</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>Dynamic Consultants</td>
+        </tr>
+        <tr>
+          <td>3B + G + 6 Commercial Bldg</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>Mario Associates</td>
+        </tr>
+        <tr>
+          <td>Fairmont Residences, IFA</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>RPW Consultants</td>
+        </tr>
+        <tr>
+          <td>Salam Studio</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>Clarke Samadhin</td>
+        </tr>
+        <tr>
+          <td>First Gulf Bank</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>2B+G+3 Comm Resi Bldg</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Al Shafar Development</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>W S Atkins</td>
+        </tr>
+        <tr>
+          <td>2B+G+29 @ Internet city</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>Al Ajmi Engineering Consultants</td>
+        </tr>
+        <tr>
+          <td>2B+G+M+7 Comm & Resi Bldg</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>Arif & Bintoak</td>
+        </tr>
+        <tr>
+          <td>2B+G+16 Residential Commercial Building at Al Nahda</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>Schuster PP</td>
+        </tr>
+        <tr>
+          <td>RAK Bank @ RAK</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>Mario Associates</td>
+        </tr>
+        <tr>
+          <td>B+G+10 Residential Commercial Building at Al Nahda</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>Arif & Bintoak</td>
+        </tr>
+        <tr>
+          <td>Vision Tower</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>Dewan Al Emara</td>
+        </tr>
+        <tr>
+          <td>Hotel & Staff Accomodation - Baniyas Island</td>
+          <td>Abu Dhabi</td>
+          <td>Italy</td>
+          <td>2008</td>
+          <td>Norr Consultants</td>
+        </tr>
+        <tr>
+          <td>Yas Marina Hotel</td>
+          <td>Abu Dhabi</td>
+          <td>Italy</td>
+          <td>2009</td>
+          <td>Red Engineering</td>
+        </tr>
+        <tr>
+          <td>Burj Al Salam(Sheraton Hotel & Office)</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2009</td>
+          <td>DAR Consult</td>
+        </tr>
+        <tr>
+          <td>Jabel Ali Industrial Bus Depot</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2009</td>
+          <td>CRHI Consulting Engineer</td>
+        </tr>
+        <tr>
+          <td>Nad Al Sheba, Race Course</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2009</td>
+          <td>Teo A Kling</td>
+        </tr>
+        <tr>
+          <td>G + 2, Police Station</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2009</td>
+          <td>Al Fahidi Consulatant</td>
+        </tr>
+        <tr>
+          <td>Medical Centre @ Dubai Mall</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2009</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Watch Gallery @ Dubai Mall</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2009</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Kinukiuya Book Store @ Dubai Mall</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2009</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Down Tower, Jebel Ali</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2009</td>
+          <td>Lehr Consultants</td>
+        </tr>
+        <tr>
+          <td>Technopark Head Quarters</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2009</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>IBN Batuta – Hotel Building</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2009</td>
+          <td>Dar Al Handasah</td>
+        </tr>
+        <tr>
+          <td>Jumeirah Heights</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2009</td>
+          <td>ARENCO</td>
+        </tr>
+        <tr>
+          <td>2B+G+M+34 at Tecom</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2009</td>
+          <td>Dubai Consultants</td>
+        </tr>
+        <tr>
+          <td>V76, Platinum Tower</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2009</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+        <tr>
+          <td>Marriott Hotel Extension</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2009</td>
+          <td>Proleed Conslutants</td>
+        </tr>
+        <tr>
+          <td>Sky Courts Apartments</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2009</td>
+          <td>LACASA Architect & Engineering Consultants</td>
+        </tr>
+        <tr>
+          <td>Meydan District Cooling Project</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2009</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>Cinestar, Mirdiff City Center</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2009</td>
+          <td>Red Engineering</td>
+        </tr>
+        <tr>
+          <td>Fitness First-Mirdiff City Center</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2009</td>
+          <td>Diplomat Engineering</td>
+        </tr>
+        <tr>
+          <td>2B+G+18 Tecom Building</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2009</td>
+          <td>Proleed Consultants</td>
+        </tr>
+        <tr>
+          <td>Nabil Ali Bin Ali Villas</td>
+          <td>Qatar</td>
+          <td>Italy</td>
+          <td>2009</td>
+          <td>-</td>
+        </tr>
+        <tr>
+          <td>Al Wakra Hospital</td>
+          <td>Qatar</td>
+          <td>Italy</td>
+          <td>2009</td>
+          <td>GHD Global</td>
+        </tr>
+        <tr>
+          <td>Bahrain City Center</td>
+          <td>Bahrain</td>
+          <td>Italy</td>
+          <td>2009</td>
+          <td>Mott MacDonald</td>
+        </tr>
+        <tr>
+          <td>Palm Jumeirah Resort & Spa</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2010</td>
+          <td>Mirk</td>
+        </tr>
+        <tr>
+          <td>Al Ghurair City Expansion -II</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2010</td>
+          <td>Arif & Bintoak</td>
+        </tr>
+        <tr>
+          <td>Lagoona Beach Hotel</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2010</td>
+          <td></td>
+        </tr>
+        <tr>
+          <td>DAMAC Park Tower at DIFC</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2010</td>
+          <td>Engineering Consulting Group</td>
+        </tr>
+        <tr>
+          <td>Meydan Grand Stand Extention 6,7,8,9,10,11 Floors</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2010</td>
+          <td>Proleed Consultants</td>
+        </tr>
+        <tr>
+          <td>B + G + 3 University Campus Building, Academy City</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2010</td>
+          <td>Proleed Consultants</td>
+        </tr>
+        <tr>
+          <td>Dubai Sports City – Stadium</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2010</td>
+          <td>ARUP Consultants</td>
+        </tr>
+        <tr>
+          <td>Fairmont Hotel – Palm Jumeirah</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2010</td>
+          <td>Proleed Consultants</td>
+        </tr>
+        <tr>
+          <td>Oberoi Hotel - Business Bay</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2010</td>
+          <td>Halcrow Consultants</td>
+        </tr>
+        <tr>
+          <td>G + 1 Building, Plot Knowledge Village5, Academy City</td>
+          <td>Dubai</td>
+          <td>Italy</td>
+          <td>2010</td>
+          <td>Ian Banham and Associates</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <script>
+      function searchTable() {
+        var input, filter, table, tr, td, i, txtValue;
+        input = document.getElementById('searchInput');
+        filter = input.value.toUpperCase();
+        table = document.getElementById('projectTable');
+        tr = table.getElementsByTagName('tr');
+
+        // Loop through all table rows, and hide those who don't match the search query
+        for (i = 1; i < tr.length; i++) {
+          // Start from 1 to skip the header row
+          tr[i].style.display = 'none'; // Hide row initially
+          td = tr[i].getElementsByTagName('td');
+          for (var j = 0; j < td.length; j++) {
+            if (td[j]) {
+              txtValue = td[j].textContent || td[j].innerText;
+              if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                tr[i].style.display = '';
+                break;
+              }
+            }
+          }
+        }
+      }
+
+      function sortTable(n) {
+        var table,
+          rows,
+          switching,
+          i,
+          x,
+          y,
+          shouldSwitch,
+          dir,
+          switchcount = 0;
+        table = document.getElementById('projectTable');
+        switching = true;
+        // Set the sorting direction to ascending:
+        dir = 'asc';
+
+        while (switching) {
+          switching = false;
+          rows = table.rows;
+          // Loop through all table rows (except the first, which contains table headers):
+          for (i = 1; i < rows.length - 1; i++) {
+            shouldSwitch = false;
+            // Get the two elements you want to compare, one from current row and one from the next
+            x = rows[i].getElementsByTagName('TD')[n];
+            y = rows[i + 1].getElementsByTagName('TD')[n];
+
+            var xContent = x.innerHTML.toLowerCase();
+            var yContent = y.innerHTML.toLowerCase();
+
+            if (dir == 'asc') {
+              if (xContent > yContent) {
+                shouldSwitch = true;
+                break;
+              }
+            } else if (dir == 'desc') {
+              if (xContent < yContent) {
+                shouldSwitch = true;
+                break;
+              }
+            }
+          }
+          if (shouldSwitch) {
+            rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+            switching = true;
+            switchcount++;
+          } else {
+            if (switchcount == 0 && dir == 'asc') {
+              dir = 'desc';
+              switching = true;
+            }
+          }
+        }
+      }
+
+      // Add click listeners to table headers for sorting
+      document.addEventListener('DOMContentLoaded', function () {
+        var headers = document.querySelectorAll('#projectTable th');
+        headers.forEach(function (header, index) {
+          header.addEventListener('click', function () {
+            sortTable(index);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

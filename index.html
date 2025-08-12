@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Siddu RC - Engineering Professional Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      .hero-banner {
+        height: 60vh;
+        max-height: 500px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 0.75rem;
+      }
+      .banner-slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        background-position: center;
+        opacity: 0;
+        transition: opacity 1.5s ease-in-out;
+        will-change: opacity;
+      }
+      .banner-slide.active {
+        opacity: 1;
+      }
+      .banner-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          to top,
+          rgba(0, 0, 0, 0.7),
+          rgba(0, 0, 0, 0.1)
+        );
+      }
+      .banner-text {
+        position: absolute;
+        bottom: 2rem;
+        left: 2rem;
+        color: white;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+      }
+      .project-card {
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+      }
+      .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+          0 4px 6px -2px rgba(0, 0, 0, 0.05);
+      }
+    </style>
+  </head>
+  <body class="bg-gray-50 text-gray-800">
+    <!-- Header & Navigation -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+      <nav
+        class="container mx-auto px-6 py-4 flex justify-between items-center"
+      >
+        <div>
+          <h1 class="text-2xl font-bold text-gray-900">Siddu RC</h1>
+          <p class="text-sm text-gray-600">
+            General Manager Sales &amp; Marketing Leader
+          </p>
+        </div>
+        <div>
+          <a
+            href="https://www.linkedin.com/in/siddu-rc-79a51619/"
+            target="_blank"
+            class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition-colors"
+            >LinkedIn</a
+          >
+        </div>
+      </nav>
+    </header>
+
+    <main class="container mx-auto px-6 py-8 md:py-12">
+      <!-- Hero Section with Rotating Banner -->
+      <section class="mb-12 md:mb-16">
+        <div id="hero-banner" class="hero-banner shadow-xl">
+          <!-- Banner Slides will be injected here by JavaScript -->
+          <div class="banner-overlay"></div>
+          <div id="banner-text" class="banner-text">
+            <h2 class="text-3xl md:text-5xl font-bold"></h2>
+            <p class="mt-2 text-lg md:text-xl">
+              Prestigious Mega Projects Secured
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section
+        id="about"
+        class="mb-12 md:mb-16 bg-white p-8 rounded-lg shadow-md"
+      >
+        <div class="flex flex-col md:flex-row items-center">
+          <!-- Profile Picture -->
+          <div class="flex-shrink-0 mb-6 md:mb-0 md:mr-8">
+            <img
+              class="w-40 h-40 rounded-full object-cover shadow-lg"
+              src="https://media.licdn.com/dms/image/v2/C4D03AQEVnuKeuRo-PA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1602407198907?e=1757548800&v=beta&t=dAuk6NVhX8iD4Pof-I1inSg1zDlVMi46gj7uxvx7hFc"
+              alt="Profile picture of Siddu RC"
+            />
+            <h3 class="mt-4 text-xl font-bold text-gray-900">Siddu RC</h3>
+          </div>
+          <!-- About Text -->
+          <div>
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">
+              31 Years of Excellence
+            </h2>
+            <p class="text-lg text-gray-700 leading-relaxed mb-4">
+              An accomplished engineering professional with a proven
+              three-decade track record of driving high growth and revenue
+              generation with leading organizations. Specialized in the sales
+              and marketing of HVAC products to top-tier Consultants, Clients,
+              and MEP Contractors across the Middle East.
+            </p>
+            <p class="text-lg text-gray-700 leading-relaxed">
+              Instrumental in establishing and growing the Mekar brand in the
+              UAE, Kuwait, Bahrain, and Oman. Successfully conceptualized and
+              implemented a low-cost back-office technical support team,
+              creating consistent revenue streams and securing over 1000
+              prestigious mega-project references.
+            </p>
+            <div class="mt-4">
+              <p class="text-lg text-gray-600 italic">
+                I would not have been able to achieve this success without the
+                the collaborative spirit of my colleagues over the years. My
+                heartfelt thanks go out to everyone who has been a part of my
+                professional journey, especially:
+              </p>
+              <ul
+                class="list-disc list-outside pl-5 mt-3 mb-3 text-gray-700 font-medium space-y-1 text-base"
+              >
+                <li>Mr. S. S. Rajkumar (Executive Chariman, KGT Group)</li>
+                <li>Mr. Francesco Boaro (CEO, Alesio Group, Mekar Srl)</li>
+                <li>Mr. Prem Paniker (MD, Ex Royal Gulf)</li>
+                <li>Mr. Arun Tuli (MD, Mekar)</li>
+                <li>Mr. Umberto Dama (Ex Marketing Manager, Mekar Srl)</li>
+                <li>Mr. Rodolfo Bertoni (Ex GM, Mekar Srl)</li>
+                <li>Mr. Georgio Bissoli (Ex Promotor, Mekar Srl)</li>
+              </ul>
+              <p class="text-lg text-gray-600 italic">
+                ...and to all other colleagues and supporters who have been
+                instrumental in my success.
+              </p>
+              <p class="text-lg text-gray-600 italic">
+                In the world of business, the importance of sales, marketing,
+                business development, expansions cannot be overstated. These
+                aspects are the very lifeblood that keeps a business evolve. No
+                matter how innovative a product, service might be generating
+                business is key for success.
+              </p>
+            </div>
+            <!-- Contact Info -->
+            <div class="mt-6 pt-4 border-t border-gray-200">
+              <h3 class="text-lg font-semibold text-gray-800 mb-3">
+                Contact Information
+              </h3>
+              <div
+                class="flex flex-col sm:flex-row sm:items-center space-y-3 sm:space-y-0 sm:space-x-6"
+              >
+                <div class="flex items-center text-gray-700">
+                  <svg
+                    class="w-5 h-5 mr-2 text-gray-500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                    />
+                  </svg>
+                  <a href="mailto:siddu@mekar.ae" class="hover:text-blue-600"
+                    >siddu@mekar.ae</a
+                  >
+                </div>
+                <div class="flex items-center text-gray-700">
+                  <svg
+                    class="w-5 h-5 mr-2 text-gray-500"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                    />
+                  </svg>
+                  <span>+971 50 657 2208</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Professional Experience Section -->
+      <section id="experience" class="mb-12 md:mb-16">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">
+          Professional Experience
+        </h2>
+        <div class="max-w-4xl mx-auto space-y-8">
+          <!-- Experience Card 1 -->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md flex items-start space-x-6"
+          >
+            <div class="flex-shrink-0">
+              <a href="https://www.mekar.ae/">
+                <img
+                  class="w-16 h-16 rounded-lg object-contain"
+                  src="https://media.licdn.com/dms/image/v2/C560BAQExDxYB_y3vsg/company-logo_200_200/company-logo_200_200/0/1630604667087/mekar_italy_logo?e=2147483647&v=beta&t=Cp53kSGVBmmV31GYWvYVApijEfsvyxc-zno-e8llrFE"
+                  alt="Mekar company logo"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.mekar.ae/"
+                ><h3 class="text-xl font-semibold text-gray-800">Mekar</h3></a
+              >
+              <p class="font-medium text-gray-600">
+                General Manager - Sales & Marketing
+              </p>
+              <p class="text-sm text-gray-500">2011 - Present</p>
+              <p class="mt-3 text-gray-700">
+                Aliseo Group - Mekar(Italy) is a leading HVAC brand with
+                extensive range of Chilled Water Air Handling Units, Hygenic Air
+                Handling Units, Fan Coil Units and High efficiency Electronic
+                Commutated range of Fan Coils. With over 1800+ major
+                installations in Middle East region, Mekar offers high quality
+                Eurovent Certified Products with competitive pricing structure
+                and reliable after sales service and spare parts. Have been
+                instrumental in establishing the brand in Middle East regions
+                such as UAE, Qatar, Oman, Kuwait, Bahrain & Egypt.
+              </p>
+            </div>
+          </div>
+          <!-- Experience Card 2-->
+          <div
+            class="bg-white p-6 rounded-lg shadow-md flex items-start space-x-6"
+          >
+            <div class="flex-shrink-0">
+              <a href="https://www.royalgulf.ae/">
+                <img
+                  class="w-16 h-16 rounded-lg object-contain"
+                  src="https://media.licdn.com/dms/image/v2/C4E0BAQEbjlP9pcYqDw/company-logo_200_200/company-logo_200_200/0/1630595262643?e=2147483647&v=beta&t=LLpWQ2gcHi6nz9wss2qTwE45du2K-2x50RqPLe8m4ZY"
+                  alt="Company logo"
+                />
+              </a>
+            </div>
+            <div>
+              <a href="https://www.royalgulf.ae/"
+                ><h3 class="text-xl font-semibold text-gray-800">
+                  Royal Gulf
+                </h3></a
+              >
+              <p class="font-medium text-gray-600">General Manager</p>
+              <p class="text-sm text-gray-500">1996 - 2015</p>
+              <p class="mt-3 text-gray-700">
+                Royal Gulf LLC represented various agency products such as:
+                <li>1) Mekar Srl, Italy Air Handling Units/ Fan Coil Units</li>
+                <li>2) Novovent, Spain Ventilation Fans</li>
+                <li>2) Metallurgica, Italy Calorifiers</li>
+                <li>3) Decsa, Italy Cooling Towers</li>
+                <li>4) Dunham Bush, Malaysia Chillers/ Airside products</li>
+                <li>5) Ventilclima, Italy Fan Coil Units</li>
+                <li>6) H & H, UK Acoustic Lagging products</li>
+                <li>7) Camfil, Sweden Air Filters</li>
+                <li>8) Wesper, France Chillers/ Air Side Products</li>
+                Was responsible for overall functioning of the company. Koohiji
+                Group (currently KGT Group) wanted to consolidate various
+                business segment and sold their controlling stake in Royal Gulf
+                to Mr. Francese Boaro, promotor of Mekar Srl. New Mekar Air
+                Handling Units LLC was formed in year 2010, which lead to
+                establishing UAE manufacturing facilities with full technology
+                transfer. Full list of projects secured prior to 2010 is
+                provided in the link below.
+              </p>
+              <a
+                href="exhaustive-list.html"
+                class="inline-block mt-4 bg-blue-600 text-white font-bold py-3 px-8 rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-opacity-50 transition-all duration-300 ease-in-out transform hover:-translate-y-1"
+              >
+                View Full Project List (1996-2010)
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Key Skills Section -->
+      <section id="skills" class="mb-12 md:mb-16">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-10">
+          Achievements
+        </h2>
+        <div
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 text-left"
+        >
+          <div
+            class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500"
+          >
+            <h3 class="text-xl font-semibold text-gray-800 mb-3"></h3>
+            <ul class="list-disc list-outside pl-5 text-gray-600 space-y-2">
+              <li>
+                Cultivated strong ties with key MEP contractors and consultants,
+                driving AED 1.3 Billion in revenue across 1000+ projects over 29
+                years.
+              </li>
+              <li>
+                Successfully launched operations in Oman, Bahrain, appointed
+                distributors in Kuwait.
+              </li>
+              <li>
+                Penetrated the Qatar market by securing brand specifications and
+                orders during the early entry phase.
+              </li>
+              <li>
+                Conducted market exploration in Egypt and Sri Lanka to assess
+                expansion opportunities.
+              </li>
+              <li>
+                Secured product specifications with leading MEP consultants
+                across the UAE, Bahrain, Oman, Qatar and Kuwait.
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500"
+          >
+            <h3 class="text-xl font-semibold text-gray-800 mb-3"></h3>
+            <ul class="list-disc list-outside pl-5 text-gray-600 space-y-2">
+              <li>
+                Responsible for P & L and oversaw all company funtions such as
+                Sales, HR, Finance, Consultant Specifications, Collections, at
+                Royal Gulf LLC for key regional projects.
+              </li>
+              <li>
+                Established backend application engineering support operations
+                in India, enhancing operational efficiency, timely submission of
+                tenders, which helped in brand presence across regions.
+              </li>
+              <li>
+                Launched new business operations in middle east countries with
+                minimal capitalexpenditure by prioritizing brand presence and
+                product specifications with consultants, later setting up
+                offices only after securing major contracts in those regions.
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="bg-white p-6 rounded-lg shadow-md border-l-4 border-blue-500"
+          >
+            <h3 class="text-xl font-semibold text-gray-800 mb-3"></h3>
+            <ul class="list-disc list-outside pl-5 text-gray-600 space-y-2">
+              <li>
+                The Retail Fitout Division was established in 2005 after
+                securing the Dubai Mall main contract, became a significant
+                growth driver, contributing to 40% of the company’s revenue
+                ensuring stable cash flow.
+              </li>
+
+              <li>
+                Mekar being one of the agency products under Royal Gulf LLC,
+                launched in 1992 in Dubai with no references and brand image.
+                Today, it has evolved into a formidable and leading brand in the
+                air conditioning industry, specializing in chilled water
+                products. What once seemed impossible then has now been realized
+                through passion, hard work and consistency.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects">
+        <h2 class="text-3xl font-bold text-center text-gray-900 mb-8">
+          Flagship Project Portfolio
+        </h2>
+        <div
+          id="project-grid"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+        >
+          <!-- Project cards will be injected here by JavaScript -->
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white mt-16">
+      <div class="container mx-auto px-6 py-8 text-center">
+        <p class="mt-2">
+          The journey with Royal Gulf and the Mekar brand is a story of
+          determination, passion, and smart work. We started with modest revenue
+          and faced the tough challenge of getting a specialized chilled water
+          AC product noticed by top consultants and MEP contractors. That’s not
+          easy in a market dominated by big well-known brands.
+        </p>
+        <p class="mt-2">
+          Consistent timely support during tender process helping MEP
+          contractors without expecting immediate orders, while also building
+          strong relationships with consultants, lead to a strong bond who
+          inturn qualified Mekar brand in their tenders, every step of business
+          cycle was handled successfully.
+        </p>
+        <p class="mt-2">
+          In the years that followed, winning major orders became a habit by
+          outsmarting competitors. The Middle East operation of Mekar Air
+          Handling Units today has subsidaries in 6 Middle Eastern countries
+          employing 170 members.
+        </p>
+      </div>
+    </footer>
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        const projects = [
+          {
+            name: 'Burj Khalifa',
+            img: 'https://blog.sothebysrealty.ae/hs-fs/hubfs/Exploring%20the%20Wonders%20of%20Burj%20Khalifa-jpg.jpeg?width=1600&height=1067&name=Exploring%20the%20Wonders%20of%20Burj%20Khalifa-jpg.jpeg',
+          },
+          {
+            name: 'The Dubai Mall',
+            img: 'https://www.visitdubai.com/-/media/gathercontent/poi/t/the-dubai-mall/fallback-image/the-dubai-mall-poi-shutterstock.jpg',
+          },
+          {
+            name: 'Royal Atlantis, The Palm',
+            img: 'https://ik.imgkit.net/3vlqs5axxjf/external/https://media.iceportal.com/150060/photos/78168676_XL.jpg?tr=w-1200%2Cfo-auto',
+          },
+          {
+            name: 'Museum of the Future',
+            img: 'https://www.artnews.com/wp-content/uploads/2022/05/Museum-of-Future-Exterior-3.jpg?w=1200',
+          },
+          {
+            name: 'IBN Batuta Buildings',
+            img: 'https://dunham-bush.com/wp-content/uploads/2020/01/5.4-IBN-Battuta-Dubai-UAE-900x556.jpg',
+          },
+          {
+            name: 'Address Grand Creek',
+            img: 'https://cf.bstatic.com/xdata/images/hotel/max1024x768/542554187.jpg?k=ccd97ca2c42216fa8f051efd9b3c8365d2cbc1e53b088418b9cc23489ccccb13&o=&hp=1',
+          },
+          {
+            name: 'Madinat Jumeirah',
+            img: 'https://media.istockphoto.com/id/505056944/photo/souk-madinat-jumeirah.jpg?s=612x612&w=0&k=20&c=87B0e74RTmWeG3CeIRSb4wqKJSDMid8cQueaYXcaYfA=',
+          },
+          {
+            name: 'Oman Airport Hangers',
+            img: 'https://omanaviation.com/assets/img/facilities/hanger/1.jpg',
+          },
+          {
+            name: 'Emaar Square',
+            img: 'https://www.altensis.com/en/wp-content/uploads/2018/12/58ffc8997af50a267400af73.jpg',
+          },
+
+          {
+            name: 'Fairmont The Palm',
+            img: 'https://bynder.onthebeach.co.uk/cdn-cgi/image/width=1400,quality=70,fit=cover,format=auto/m/40ac29242c936a99/original/Fairmont-The-Palm.jpg',
+          },
+          {
+            name: 'DCGA Administration Building',
+            img: 'https://almullaengineering.com/wp-content/uploads/2018/01/DGCA-F.jpg',
+          },
+          {
+            name: 'Marrasi Mall, Bahrain',
+            img: 'https://www.pace-me.com/wp-content/uploads/2019/11/6.jpg',
+          },
+          {
+            name: 'Sofitel Hotel',
+            img: 'https://dq5r178u4t83b.cloudfront.net/wp-content/uploads/sites/15/2023/11/28122656/Microsite-3.png',
+          },
+          {
+            name: 'Wafi Mall',
+            img: 'https://www.malls.com/wp-content/uploads/2024/10/aaf580f2a3cb530f58fd26f6803d9a22-scaled.jpg',
+          },
+          {
+            name: 'Tiara Residences',
+            img: 'https://psinv.net/assets/uploads/images/36e11673-d9df-45fc-86fa-910bedddc114/general-images0-n-a--0x0.jpg',
+          },
+          {
+            name: 'Wafi Hotel',
+            img: 'https://cf.bstatic.com/xdata/images/hotel/max1024x768/510296760.jpg?k=4b424a094bfd93f0d9ad1e278322079904803cb89eb2753c6a7d8f507785f285&o=&hp=1',
+          },
+          {
+            name: 'Dubai Exhibition Center',
+            img: 'https://media.umbraco.io/dwtc-new/oxagifzr/dec-expansion-4.jpg',
+          },
+          {
+            name: 'Meydan Hotel',
+            img: 'https://venuewise.com/upload/venue/gallery/2024/11/04/the_meydan_hotel_exterior_3_672875d97c83e.jpg',
+          },
+          {
+            name: 'The Palm Towers',
+            img: 'https://www.kredium.ae/storage/ae/new_construction/images/newconstruction-102/BI_B_KRAE0000000129_1.jpg',
+          },
+          {
+            name: 'DEWA Headquarters',
+            img: 'https://www.obermeyer-group.com/wp-content/uploads/2023/12/DEWA_aussen1_16zu9-1200x675.jpg',
+          },
+          {
+            name: 'Deep Dive Dubai',
+            img: 'https://media.cnn.com/api/v1/images/stellar/prod/210708161551-deep-dive-dubai-exterior.jpg?q=w_1600,h_900,x_0,y_0,c_fill',
+          },
+        ];
+
+        const bannerContainer = document.getElementById('hero-banner');
+        const bannerTextEl = document.querySelector('#banner-text h2');
+        const projectGrid = document.getElementById('project-grid');
+
+        // --- Populate Banner ---
+        let bannerHTML = '';
+        projects.forEach((project, index) => {
+          bannerHTML += `<div class="banner-slide ${
+            index === 0 ? 'active' : ''
+          }" style="background-image: url('${project.img}');"></div>`;
+        });
+        bannerContainer.insertAdjacentHTML('afterbegin', bannerHTML);
+
+        const slides = document.querySelectorAll('.banner-slide');
+        let currentSlide = 0;
+
+        function showSlide(index) {
+          slides.forEach((slide, i) => {
+            slide.classList.toggle('active', i === index);
+          });
+          bannerTextEl.textContent = projects[index].name;
+        }
+
+        function nextSlide() {
+          currentSlide = (currentSlide + 1) % slides.length;
+          showSlide(currentSlide);
+        }
+
+        showSlide(0);
+        setInterval(nextSlide, 3000); // Change slide every 5 seconds
+
+        // --- Populate Project Grid ---
+        let gridHTML = '';
+        projects.forEach((project) => {
+          gridHTML += `
+                    <div class="project-card bg-white rounded-lg overflow-hidden shadow-md">
+                        <img src="${project.img}" alt="Image of ${project.name}" class="w-full h-48 object-cover" onerror="this.onerror=null;this.src='https://placehold.co/600x400/cccccc/FFFFFF?text=Image+Not+Found';">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-900">${project.name}</h3>
+                        </div>
+                    </div>
+                `;
+        });
+        projectGrid.innerHTML = gridHTML;
+      });
+    </script>
+  </body>
+</html>
